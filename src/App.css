@@ -2,10 +2,23 @@
   text-align: center;
   
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+ 
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  transition: transform 0.2s ease-in-out;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,10 +36,19 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.App-link:hover {
+  background-color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -37,3 +59,15 @@
     transform: rotate(360deg);
   }
 }
+@media (max-width: 480px) {
+  .App-header {
+    font-size: calc(8px + 3vmin);
+  }
+}
+@media (max-width: 480px) {
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+    
